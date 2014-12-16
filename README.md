@@ -1,5 +1,5 @@
 
-Model the fragment size distribution of B73 (Maize) gDNA based on fragment analyzer result and calculate the picomole amount of DNA for that particular distribution of DNA fragment size.
+Model the fragment size distribution of B73 (Maize) gDNA based on fragment analyzer result and calculate the picomole amount of DNA for that particular distribution of DNA fragment sizes.
 ===========================================================================================================================================================================================
 
 
@@ -12,7 +12,7 @@ Modelled distribution of gDNA size distribution for B73(Maize) gDNA:
 ================================================
 ![alt tag](https://github.com/ffrancis/Model_gDNAsizedistAND3prime_pmol_calc/blob/master/Size_distribution_gDNA121614.png)
 
-Description     :       Model the fragment size distribution of B73 (Maize) gDNA based on fragment analyzer result and calculate the picomole amount of DNA for that particular distribution of DNA fragment size.
+Description     :
                         
                         The fragment size of gDNA is a continuous variable, and its probability distribution is a continous probability distribution.
                         (The triangular distribution is often used in ill-defined problems where the underlying distribution is not known, but some knowledge of the limits and mode exists)
