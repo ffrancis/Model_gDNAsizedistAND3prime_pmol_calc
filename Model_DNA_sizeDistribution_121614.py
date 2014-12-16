@@ -14,11 +14,11 @@ Description     :       Model the fragment size distribution of B73 (Maize) gDNA
                         In NEB TdT, we use 6ul * 20U = 120 U TdT
                         For 120 U we can use: (100/400)* 120 = 30 pmol 3'ends
                         So, the amount of dS gDNA that can be used (with 120U TdT), given that it has Nbp:
-                        X ug (of dsDNA) = 30 * N bp * 660 (Da) / 2 * 10^6 
+                        X ug (of dsDNA) = 30 * N bp * 660 (Da) / 2 * 10^6
+                        
+Contact         :       felixfrancier@gmail.com
 
-                
-Note            :       The probability density function for the triangular distribution can written as a function below.
-
+Note            :       The probability density function for the triangular distribution can be written as a function given below.
 
                         def triang_dist(x, l, m, r):
                                 if x >= l and x <= m:
@@ -43,12 +43,11 @@ import matplotlib.pyplot as plt
 min_value       = 1200          # Lower bound of size distribution from fragment analyser
 max_value       = 40000         # Upper bound of size distribution from fragment analyser
 mode            = 29050         # Peak from fragment analyser
-num_data_points = 10000
+num_data_points = 10000         # Number of data points for the distribution
 
 
 # Model the distribution of the gDNA fragments based on the available parameters(min_value, mode and max_value)
 distribution = numpy.random.triangular(min_value, mode, max_value, size=num_data_points)
-
 
 
 ###################################################################
@@ -93,7 +92,7 @@ dna_amount = []
 for i in distribution:
         dna_amount.append(dna_amount_cal(i))
 
-average_dna_amount = sum(dna_amount ) / float(num_data_points)
+average_dna_amount = sum(dna_amount) / float(num_data_points)
 print average_dna_amount
 ###################################################################
 
