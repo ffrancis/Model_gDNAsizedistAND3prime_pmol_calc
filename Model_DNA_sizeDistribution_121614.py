@@ -116,6 +116,7 @@ ax.set_title(combined_text) # Title with info regarding the min_value, max_value
 ax.set_xlabel('DNA fragment length')
 ax.set_ylabel('Count')
 
+
 L = max_value - min_value
 bin = L/80
 ax.hist(distribution,color='grey',alpha=0.5,bins=bin)
