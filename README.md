@@ -1,5 +1,5 @@
 
-Model the fragment size distribution of B73 (Maize) gDNA based on fragment analyzer result and calculate the picomole amount of DNA for that particular distribution of DNA fragment sizes.
+Model the fragment size distribution of B73 (Maize) gDNA based on fragment analyzer result and calculate the picomole amount of DNA for that distribution of DNA fragment sizes.
 ===========================================================================================================================================================================================
 
 
